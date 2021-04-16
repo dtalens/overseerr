@@ -267,7 +267,7 @@ class DiscordAgent
         type: Notification[type],
         subject: payload.subject,
         errorMessage: e.message,
-        response: e.response.data,
+        response: e.response?.data,
       });
 
       return false;
